@@ -1,0 +1,380 @@
+@import url('https://fonts.cdnfonts.com/css/gobold');
+@import url('https://fonts.cdnfonts.com/css/neue-hans-kendrick');
+@import url('https://fonts.cdnfonts.com/css/effra-heavy');
+@import url('https://fonts.cdnfonts.com/css/polsku');
+@import url('https://fonts.cdnfonts.com/css/facile-sans');
+@import url('https://fonts.cdnfonts.com/css/fredoka-one');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    overflow-x: hidden;
+}
+.slider-container .logo{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform 0.4s ease-in;
+
+}
+.slider-container .logo:hover{
+   
+    transform: rotate(360deg);
+}
+.slider-container{
+    height: 100vh;
+    overflow: hidden;
+
+    background-color: #8b0015;
+   
+
+}
+.the-big{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-direction: row;
+    width: 100vw;
+    background-color: #8b0015;
+    position: absolute;
+    box-shadow: 5px 5px 10px rgba(0 , 0 , 0 , 0.8);
+    z-index: 2;
+   
+    
+}
+.the-big .close{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.the-big .close li {
+padding: 0 50px;
+font-family: 'Gobold Uplow', sans-serif;
+text-transform: uppercase;
+list-style: none;
+font-size:30px;
+
+
+}
+.the-big .close li a{
+    text-decoration: none;
+    color: white;
+    padding:25px;
+    transition: 0.4s ease-in-out;
+}
+.the-big .close li a:hover{
+    color: #f9ae13;
+    text-decoration: underline;
+    background-color: rgba(187 , 0 , 56 , 0.5);
+    
+}
+
+.big-slider #writing{
+ font-size:150px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ background-color: transparent;
+ font-family: 'Gobold Uplow', sans-serif;
+ text-transform: uppercase;
+color: #f9ae13;
+transition: 0.4s ease-in;
+
+}
+
+
+.search {
+  position: relative;
+  height: 50px;
+}
+
+.search .input {
+  border-radius: 50px;
+  background-color: #fff;
+  border: 0;
+  font-size: 18px;
+  padding: 15px;
+  height: 50px;
+  width: 50px;
+  transition: width 0.3s ease;
+}
+
+.btn {
+  border-radius: 50px;
+
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  transition: transform 0.3s ease;
+}
+
+.btn:focus,
+.input:focus {
+  outline: none;
+}
+
+.search.active .input {
+  width: 250px;
+}
+
+.search.active .btn {
+  transform: translateX(198px);
+}
+
+
+
+
+
+.big-nav{
+    display: none;
+}
+
+@media (max-width:1000px){
+
+  .big-nav{
+    display: block;
+    position: absolute;
+    z-index: 3;
+}
+
+    .nav-btn {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 20px;
+      }
+      
+      .open-btn {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+         color:white;
+        
+      }
+      
+      
+      .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        
+       
+      }
+      
+      .nav.visible {
+        transform: translateX(0);
+      }
+      
+      .nav-black {
+        background-color: rgb(34, 31, 31);
+        width: 60%;
+        max-width: 400px;
+        min-width: 320px;
+        transition-delay: 0.4s;
+      }
+      
+      .nav-black.visible {
+        transition-delay: 0s;
+      }
+      
+      .nav-red {
+        background-color:#8b0015;
+        width: 95%;
+        transition-delay: 0.2s;
+      }
+      
+      .nav-red.visible {
+        transition-delay: 0.2s;
+      }
+      
+      .nav-white {
+        background-color: #fff;
+        width: 95%;
+        padding: 40px;
+
+        transition-delay: 0s;
+      }
+      
+      .nav-white.visible {
+        transition-delay: 0.4s;
+      }
+      
+      .close-btn {
+        opacity: 0.3;
+        position: absolute;
+        top: 40px;
+        right: 30px;
+      }
+      
+      .list {
+        list-style-type: none;
+        padding: 0;
+      }
+      
+      .list li {
+        font-family: 'Gobold Uplow', sans-serif;
+        margin: 20px 0;
+      }
+      
+      .list li a {
+        color: rgb(34, 31, 31);
+        font-size: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.4s ease-in-out;
+      }
+      .list li a:hover{
+        text-decoration: underline;
+        font-size: 23px;
+      }
+      
+      
+      .list ul {
+        list-style-type: none;
+        padding-left: 20px;
+      }
+
+      .the-big .close{
+        display: none;
+      }
+
+      .info-22 .left-info-22 i{
+        margin: 0 30px;
+      }
+      .info-22 .dd h5{
+        font-size: 15px;
+      }
+
+      .info-22 .right-info-22 h3{
+        font-size: 22px;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+.contactus{
+    width: 80%;
+    padding: 30px 0;
+    margin:50px auto;
+}
+.contactus iframe{
+    width: 100%;
+}
+.info-22{
+    padding: 10px;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgba(245  , 222  , 179 , 0.4);
+}
+.left-info-22{
+    overflow: hidden;
+text-align: center;
+width: 60%;
+padding: 20px;
+
+}
+.left-info-22 .dd{
+    display: flex;
+    align-items: center;
+    margin: 80px 0;
+}
+.dd h5{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: 'Neue Hans Kendrick', sans-serif;
+    text-transform: uppercase;
+}
+.ff{
+    margin: 0;
+    padding: 0;
+}
+.left-info-22 i{
+    color: #8b0015;
+    font-size: 30px;
+    margin: 0 100px;
+    transition: 0.4s ease-in;
+}
+.right-info-22{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    padding: 20px;
+} 
+.right-info-22 h3{
+    margin-bottom: 80px;
+    font-family: 'Gobold Uplow', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 30px;
+    transition: 0.4s ease-in;
+}
+.comment{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.comment input{
+    margin-bottom: 30px;
+    padding: 20px 30px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgba(187 , 0 , 56 , 0.2);
+    font-family: 'Neue Hans Kendrick', sans-serif;
+    transition: 0.4s ease-in;
+
+}
+.comment input:focus{
+    box-shadow: 2px 5px 5px rgba(0 , 0 , 0 , 0.5) ,-2px -5px 5px rgba(0 , 0 , 0 , 0.5);
+}
+.btnn{
+    width: 50%;
+    margin:30px  auto;
+    padding:10px 20px;
+    background-color: #8b0015;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Neue Hans Kendrick', sans-serif;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    transition: 0.4s ease-in-out;
+}
+.btnn:hover{
+    background-color: white;
+    color: #8b0015;
+    border-radius: 50px;
+    width: 60%;
+    border: 1px solid #8b0015;
+}
