@@ -70,7 +70,7 @@ font-size:30px;
 .the-big .close li a:hover{
     color: #f9ae13;
     text-decoration: underline;
-    background-color: rgba(187 , 0 , 56 , 0.5);
+    font-size: 35px;
     
 }
 .big-nav{
@@ -141,9 +141,16 @@ font-size:30px;
       
       .open-btn {
         position: fixed;
-        top: 10px;
+        top: 5px;
         left: 10px;
          color:white;
+         background-color: #8b0015;
+         width: 100px;
+         height: 100px;
+         border-top-right-radius: 50%;
+         border-bottom-right-radius: 50%;
+         left: -30px;
+     
         
       }
       
@@ -246,8 +253,8 @@ font-size:30px;
         font-size:13px;
       }
       
-      .small-info .b-class .btn{
-        font-size: 15px;
+      .small-info .b-class .btnn{
+        font-size: 18px;
       }
       
 
@@ -810,7 +817,6 @@ box-shadow: 2px 5px 10px rgba(0 , 0 , 0 , 0.8);
 .info-5 .small-box-5 nav ul li a:hover{
   color: #0098c3;
 }
-
 
 
 .info-6{

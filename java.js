@@ -159,24 +159,4 @@ mains.forEach(main =>{
 
 
 
-const writ = document.getElementById('writing')
-
-const writing = 'I LOVE TRAVLING'
-
-let yy = 1
-
-let speed = 200
-
-writeText()
-function writeText(){
-    writ.innerText = writing.slice(0,yy)
-    yy++
-    if(yy > writing.length){
-        yy = 1
-    }
-    setTimeout(writeText , speed)
-}
-
-
-
 

@@ -73,8 +73,7 @@ font-size:30px;
 .the-big .close li a:hover{
     color: #f9ae13;
     text-decoration: underline;
-    background-color: rgba(187 , 0 , 56 , 0.5);
-    
+font-size: 35px;    
 }
 
 .big-slider #writing{
@@ -86,8 +85,9 @@ font-size:30px;
  background-color: transparent;
  font-family: 'Gobold Uplow', sans-serif;
  text-transform: uppercase;
-color: #f9ae13;
+color: #fff;
 transition: 0.4s ease-in;
+text-shadow: 0 5px 10px rgba(187 , 0 , 56 , 0.8);
 
 }
 
@@ -161,9 +161,16 @@ transition: 0.4s ease-in;
       
       .open-btn {
         position: fixed;
-        top: 10px;
+        top: 5px;
         left: 10px;
          color:white;
+         background-color: #8b0015;
+         width: 100px;
+         height: 100px;
+         border-top-right-radius: 50%;
+         border-bottom-right-radius: 50%;
+         left: -30px;
+
         
       }
       
@@ -358,7 +365,7 @@ padding: 20px;
     box-shadow: 2px 5px 5px rgba(0 , 0 , 0 , 0.5) ,-2px -5px 5px rgba(0 , 0 , 0 , 0.5);
 }
 .btnn{
-    width: 50%;
+    width: 100%;
     margin:30px  auto;
     padding:10px 20px;
     background-color: #8b0015;
@@ -375,6 +382,6 @@ padding: 20px;
     background-color: white;
     color: #8b0015;
     border-radius: 50px;
-    width: 60%;
+    width: 80%;
     border: 1px solid #8b0015;
 }

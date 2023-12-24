@@ -3,6 +3,17 @@
 @import url('https://fonts.cdnfonts.com/css/effra-heavy');
 @import url('https://fonts.cdnfonts.com/css/polsku');
 @import url('https://fonts.cdnfonts.com/css/facile-sans');
+@import url('https://fonts.cdnfonts.com/css/fredoka-one');
+
+.pattern{
+  background-image: url(img/pngegg\ \(70\).png);
+  background-size: 20%;
+  height: 55px;
+  width: 60vw;
+  margin:  0 auto;
+  border: none;
+  transition: 0.4s ease-in-out;
+}
 
 
 *{
@@ -71,9 +82,23 @@ font-size:30px;
 .the-big .close li a:hover{
     color: #f9ae13;
     text-decoration: underline;
-    background-color: rgba(187 , 0 , 56 , 0.5);
-    
+    font-size: 35px;    
 }
+
+.big-slider #writing{
+ font-size:150px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ background-color: transparent;
+ font-family: 'Gobold Uplow', sans-serif;
+ text-transform: uppercase;
+color: #f9ae13;
+transition: 0.4s ease-in;
+
+}
+
 
 .search {
   position: relative;
@@ -122,6 +147,7 @@ font-size:30px;
 
 
 
+
 .big-nav{
     display: none;
 }
@@ -143,9 +169,16 @@ font-size:30px;
       
       .open-btn {
         position: fixed;
-        top: 10px;
+        top: 5px;
         left: 10px;
          color:white;
+         background-color: #8b0015;
+         width: 100px;
+         height: 100px;
+         border-top-right-radius: 50%;
+         border-bottom-right-radius: 50%;
+         left: -30px;
+
         
       }
       
@@ -238,39 +271,25 @@ font-size:30px;
         display: none;
       }
 
-       .slide .text-slide {
-        width: 40vw;
-        margin-left: 30px;
+      .info-12 .nav-for-info-12 ul li{
+        margin: 10px 20px;
       }
 
-      .info-7 .left-hand h2{
-        font-size: 40px;
-        letter-spacing: 1px;
+      .the-beagest-forever .the-beagest-left{
+        height: 150vh;
       }
-      .info-7 .left-hand p{
-        letter-spacing: 0.5px;
-        font-size: 15px;
+      .the-beagest-forever .the-beagest-right{
+        height: 150vh;
       }
 
-      .info-8 .counter-container {
-        padding: 0;
-      }
+     body .big-slider h1{
+      font-size: 100px;
+     }
 
-      .info-9 .history-right h1{
-        padding: 10px;
-      }
-      .info-9 .history-right ul{
-        font-size: 15px;
-      }
-      .info-9 .history-right ul li{
-        margin-bottom: 10px;
-      }
-       body .info-10 h1{
-        font-size: 30px;
-       }
-       .info-10 .join-btn{
-        margin: 0 10px;
-       }
+     body .pattern{
+      margin-top: 30px;
+      height: 35px;
+    }
 
 }
 .big-slider{
@@ -288,239 +307,135 @@ font-size:30px;
     width: 100vw;
     height: 100vh;
 }
-.text-slide{
-    position: absolute;
-    left: -5%;
-    bottom:10% ;
+.info-12{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-color: #f9ae13;
+    position: relative;
+}
+.nav-for-info-12{
     background-color: #8b0015;
-    width: 30vw;
-    height: 10vh;
-    text-align: end;
-    border-radius: 20px;
-    color: white;
-    padding:10px;
-    margin-left: 50px;
+    width:80vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 50px;
+    position: absolute;
+    top: -150px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.4s ease;
+    box-shadow: 5px 5px 15px rgba(0 , 0 , 0 , 0.8);
+}
+.nav-for-info-12 ul{
+    display: flex;
+    list-style-type: none;
+
+}
+.nav-for-info-12 ul li{
+    padding: 10px 30px;
+    margin: 20px 30px;
     font-family: 'Gobold Uplow', sans-serif;
-    text-transform:uppercase ;
-    letter-spacing: 3px;
-    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 30px;
     transition: 0.4s ease;
 }
 
-.info-7{
-    display: flex;
-    justify-content:center ;
-    align-items: start;
-    padding: 20px;
-    height: 50vh;
-    width: 100vw;
-    overflow: hidden;
 
-
+.nav-for-info-12 ul li a{
+    color: #f9ae13;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
 }
-.left-hand{
-    width: 50vw;
-    margin-right: 30px;
-    margin-left: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-self: center;
-    transition: 0.4s ease-in;
-}
-.left-hand h2 {
-    font-family: 'Polsku', sans-serif;
-    text-transform: capitalize;
-    text-align: start;
-    letter-spacing: 2px;
-    font-size: 50px;   
-    color: #0c234b; 
-}
-.left-hand p{
-    font-family: 'Neue Hans Kendrick', sans-serif;
-    letter-spacing: 1px;
-    font-size: 20px;
-    color: #333;
-}
-
-.right-hand{
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-self: center;
-    transition: 0.4s ease-in;
-}
-.right-hand h2{
-    font-family: 'Neue Hans Kendrick', sans-serif;
+.nav-for-info-12 ul li a:hover{
+    text-decoration: underline;
+    color: #fff;
     font-size: 40px;
-    text-transform: capitalize;
-    letter-spacing: 2px;
-    color: #333;
-
-}
-img{
-    width: 50vw;
-    height: 40vh;
-    object-fit: cover;
-}
-.patern{
-    transition: 0.4s ease-in;
-    border: none;
-    border: 2px solid #555555;
-    width: 50vw;
-    margin: 30px auto;
-    opacity: 0.5;
 }
 
-.info-8{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #8b0015;
-  margin-top: 50px;
- 
-  
+.nav-for-info-12 ul li a:focus{
+    text-decoration: underline;
+    color: #fff;
+    font-size: 40px;
+    transition: 0.4s ease-in-out;
 }
-.counter-container{
+
+.the-beagest-forever{
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  margin: 20px 40px;
+  padding: 20px;
   align-items: center;
+  justify-content: center;
+  transition: 0.4s ease-in;
+  position: relative;
+}
+.the-beagest-forever.frist{
+  margin-top: 250px;
+}
+
+.nav-for-info-12 p{
   color: white;
+  letter-spacing: 1px;
   font-family: 'Neue Hans Kendrick', sans-serif;
   text-transform: capitalize;
-  padding: 0 70px;
-  transition: 0.4s ease-in;
 }
 
-.counter{
-  font-size: 60px;
-  margin-top: 10px;
-  text-align: center;
-  color: #f9ae13;
-  letter-spacing: 3px;
-  font-family: 'Gobold Uplow', sans-serif;
-}
 
-.info-9{
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  padding: 30px;
-  font-family: 'Neue Hans Kendrick', sans-serif;
-  height: 100vh;
-  width: 100vw;
-  margin: 0 auto;
-  overflow: hidden;
-}
-.history-right{
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  flex-direction: column;
-  width: 70vw;
-  transition: 0.4s ease-in;
-}
-.history-right h1{
-  font-size: 60px;
-  padding: 20px;
-  color: #0c234b; 
-  transition: 0.4s ease-in;
-
-}
-.history-right p{
-  padding: 20px;
-  font-size: 18px;
+.the-beagest-forever h1{
+  font-family: 'Fredoka One', sans-serif;
+  text-transform: capitalize;
   letter-spacing: 1px;
-  color: #333;
-}
-.history-right ul{
-  margin-left: 100px;
-  font-size: 18px;
-  color: #555555;
-  transition: 0.4s ease-in;
-}
-.history-right ul li{
-  margin-bottom: 30px;
-  transition: 0.4s ease-in;
-}
-
-.line-center-of-history{
-  height: 95vh;
-  width: 10px;
-  background-color: #8b0015;
-  margin: 0 20px;
-  border: none;
-}
-
-.history-left{
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  flex-direction: column;
-}
-.line-history{
-  width: 90%;
-  margin: 10px auto;
+  font-size: 35px;
+  margin: 30px 0;
   color: #8b0015;
 
-
 }
-.small-history-left{
-  margin-bottom:10px;
-  padding:10px;
+.the-beagest-forever p{
+  font-family: 'Neue Hans Kendrick', sans-serif;
   text-transform: capitalize;
-  transition: 0.4s ease-in;
-  
+  margin-bottom: 30px;
+  letter-spacing: 1px;
 }
-.small-history-left h2{
-  font-size: 40px;
-  margin-bottom: 5px;
-  color: #0c234b;
+.more-paragraph{
+  color: #8b0015;
+  font-size: 20px;
+  cursor: pointer;
 }
-.small-history-left p{
-  color: #333;
+.more-paragraph:hover{
+  text-decoration: underline;
+
 }
 
-.info-10{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #8b0015;
-  margin-top: 50px;
-  flex-direction: column;
+.the-beagest-left{
+  width: 45vw;
+  height: 200vh;
   padding: 50px;
-}
-.info-10 h1{
-  font-family: 'Gobold Uplow', sans-serif;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
-  font-size: 50px;
-  color: white;
+  overflow: hidden;
+  margin: 0 20px ;
   transition: 0.4s ease-in;
+  background-color: rgba(245, 222, 179, 0.3);
 }
-.join-btn{
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  padding: 10px 30px;
-  color: white;
-  font-family: 'Facile Sans', sans-serif;
-  font-size: 30px;
-  border: 2px solid white;
-  margin: 0 20px;
+.the-beagest-right{
+  padding: 50px;
+  width: 45vw;
+  height: 200vh;
+  overflow: hidden;
   transition: 0.4s ease-in;
-  
+  background-color: rgba(245, 222, 179, 0.3);
 }
-.join-btn:hover{
-  background-color: white;
-  color: #333;
+.the-beagest-forever img{
+  width:100%;
+  height:100%;
+  box-shadow: 2px 5px 8px rgba(0 , 0 , 0 , 0.5);
 }
+
+
+
+
+
 
 
 
@@ -688,6 +603,10 @@ img{
 .social-MM li a:hover:nth-child(4) {
   color: #dd4b39;
 }
+
+
+
+
 
 
 
